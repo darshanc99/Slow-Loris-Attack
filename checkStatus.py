@@ -3,8 +3,9 @@ import os, time
 
 f = open('config.txt','r+')
 target = f.read()
-command = "http " + target
+command = "time curl -I " + target + " | grep HTTP"
 
 while True:
-    os.system(command)
+    resp = os.system(command)
+    print("\n\n")
     time.sleep(10)

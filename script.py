@@ -4,6 +4,10 @@ import socket
 import logging
 import time
 import random
+from pyfiglet import Figlet
+
+f = Figlet(font='slant')
+print(f.renderText('Slow Loris Attack'))
 
 address = ''
 port = ''
